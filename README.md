@@ -28,8 +28,6 @@ O usuário não precisa estar logado no sistema.
 #Cadastro de Especificação no carro
 **Requisitos Funcionais**
 Deve ser possível cadastrar uma especificação para um carro
-Deve ser possível listar todas as especificações
-Deve ser possível listar todos os carros
 
 **Requisitos não Funcionais**
 
