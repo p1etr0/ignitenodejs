@@ -49,6 +49,19 @@ O usuário deve poder cadastrar mais de uma imagem para o mesmo carro.
 O usuário responsável pelo cadastro deve ser um usuário administrador
 
 
+# Cadastro de imagens do carro:
+
+**Requisitos Funcionais**
+Deve ser possível cadastrar a imagem do carro
+
+**Requisitos não Funcionais**
+Utilizar o multer para upload dos arquivos
+
+**Regra de Negocio**
+O usuário deve poder cadastrar mais de uma imagem para o mesmo carro
+O usuário responsável pelo cadastro deve ser um usúario administrador
+
+
 #Aluguel de Carro
 **Requisitos Funcionais**
 Deve ser possível cadastrar um aluguel
