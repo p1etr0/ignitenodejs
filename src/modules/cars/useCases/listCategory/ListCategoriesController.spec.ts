@@ -42,7 +42,7 @@ describe("Create Category Controller", () => {
 
     const response = await request(app).get("/categories")
 
-    expect(response.status).toBe(201)
+    expect(response.status).toBe(200)
     expect(response.body.lenght).toBe(1)
     expect(response.body[0]).toHaveProperty("id")
     expect(response.body[0].name).toEqual("Category Supertest")
