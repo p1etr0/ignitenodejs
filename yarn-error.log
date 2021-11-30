@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\pietr\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add dayjs
+  C:\Program Files\nodejs\node.exe C:\Users\pietr\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add supertest @types/supertest -D
 
 PATH: 
-  C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Azure Data Studio\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\nodejs\;C:\Ruby30-x64\bin;C:\Users\pietr\AppData\Local\Microsoft\WindowsApps;C:\Users\pietr\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Java\jdk-17.0.1\bin;C:\WinNMP\bin;C:\WinNMP\include;C:\Program Files\PostgreSQL\14\bin;C:\Users\pietr\AppData\Roaming\npm
+  C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Azure Data Studio\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Ruby30-x64\bin;C:\Users\pietr\AppData\Local\Microsoft\WindowsApps;C:\Users\pietr\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Java\jdk-17.0.1\bin;C:\WinNMP\bin;C:\WinNMP\include;C:\Program Files\PostgreSQL\14\bin;C:\Users\pietr\AppData\Roaming\npm
 
 Yarn version: 
   1.22.17
@@ -35,6 +35,7 @@ npm manifest:
       "@types/uuid": "^8.3.1",
       "bcryptjs": "^2.4.3",
       "csv-parse": "^4.16.3",
+      "dayjs": "^1.10.7",
       "express": "^4.17.1",
       "express-async-errors": "^3.1.1",
       "jsonwebtoken": "^8.5.1",
@@ -1392,6 +1393,11 @@ Lockfile:
       abab "^2.0.3"
       whatwg-mimetype "^2.3.0"
       whatwg-url "^8.0.0"
+  
+  dayjs@^1.10.7:
+    version "1.10.7"
+    resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.10.7.tgz#2cf5f91add28116748440866a0a1d26f3a6ce468"
+    integrity sha512-P6twpd70BcPK34K26uJ1KT3wlhpuOAPoMwJzpsIWUxHZ7wpmbdZL/hQqBDfz7hGurYSa5PhzdhDHtt319hL3ig==
   
   debug@2.6.9:
     version "2.6.9"
