@@ -4,7 +4,7 @@ import { UsersTokensRepository } from '@modules/accounts/infra/typeorm/repositor
 import { IDateProvider } from '@shared/container/providers/DateProvider/IDateProvider'
 import { AppError } from '@shared/errors/AppError'
 import {verify, sign} from 'jsonwebtoken'
-import { inject } from 'tsyringe'
+import { inject, injectable } from 'tsyringe'
 
 
 interface IPayload{
@@ -12,12 +12,13 @@ interface IPayload{
   email: string;
 }
 
+@injectable()
 class RefreshTokenUseCase{
 
   constructor(    
     @inject("UsersTokensRepository")
     private usersTokensRepository: UsersTokensRepository,
-    @inject("DayjsProvider")
+    @inject("DayjsDateProvider")
     private dateProvider: IDateProvider
   ){
 
