@@ -4,8 +4,9 @@ import { getRepository, Repository } from "typeorm";
 import { IUsersRepository } from '@modules/accounts/repositories/IUsersRepository';
 import { User } from "../entities/User";
 import { ICreateUserDTO } from "@modules/accounts/dtos/ICreateUserDTO";
+import { injectable } from "tsyringe";
 
-
+@injectable()
 class UsersRepository implements IUsersRepository{
 
   private repository: Repository<User>
@@ -15,6 +16,14 @@ class UsersRepository implements IUsersRepository{
   }
 
   async findByEmail(email: string): Promise<User | undefined> {
+    
+    const user = await this.repository.findOne({email});
+    
+    return user;
+  }
+
+  async findByEmailToForgotPassword(email: string): Promise<User | undefined> {
+    
     const user = await this.repository.findOne(email);
     
     return user;

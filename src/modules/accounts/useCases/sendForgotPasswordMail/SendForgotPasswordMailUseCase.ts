@@ -23,9 +23,9 @@ class SendForgotPasswordMailUseCase{
 
   async execute(email: string): Promise<void>{
 
-    const user = await this.usersRepository.findByEmail(email)
+    const user = await this.usersRepository.findByEmailToForgotPassword(email)
 
-    const templatePath = resolve(__dirname, "..", "..", "views", "emails", "forgotPassword.hbs")
+    const templatePath = resolve(__dirname, "..", "..", "views", "emails", "forgotPassword.hbs");
 
     const to_email = user.email
 
