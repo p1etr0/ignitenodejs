@@ -25,13 +25,13 @@ class SendForgotPasswordMailUseCase{
 
     const user = await this.usersRepository.findByEmailToForgotPassword(email)
 
-    const templatePath = resolve(__dirname, "..", "..", "views", "emails", "forgotPassword.hbs");
-
-    const to_email = user.email
-
     if(!user){
       throw new AppError("User does not exists!")
     }
+    
+    const templatePath = resolve(__dirname, "..", "..", "views", "emails", "forgotPassword.hbs");
+
+    const to_email = user.email
 
     const token = uuidV4();
 
