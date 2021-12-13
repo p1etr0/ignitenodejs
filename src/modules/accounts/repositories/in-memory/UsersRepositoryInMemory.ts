@@ -25,8 +25,8 @@ class UsersRepositoryInMemory implements IUsersRepository{
     return this.users.find(user => user.id === id)
   }
 
-  findByEmailToForgotPassword(email: string): Promise<User> {
-    throw new Error("Method not implemented.");
+  async findByEmailToForgotPassword(email: string): Promise<User> {
+    return this.users.find(user => user.email === email)
   }
   
 }
