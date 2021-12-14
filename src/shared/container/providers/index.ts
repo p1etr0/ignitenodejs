@@ -17,7 +17,8 @@ container.registerInstance<IMailProvider>(
   new EtherealMailProvider()
 )
 
+
 container.registerSingleton<IStorageProvider>(
   "StorageProvider",
-  S3StorageProvider
+  LocalStorageProvider
 )
