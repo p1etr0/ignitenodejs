@@ -51,6 +51,7 @@ class AuthenticateUserUseCase {
     if(!passwordMatch){
       throw new AppError("Email or Password incorrect!");
     }
+    
 
     const token = sign({}, secret_token, {
       subject: user.id,

@@ -16,6 +16,7 @@
     "@types/nodemailer": "^6.4.4",
     "@types/uuid": "^8.3.1",
     "ansi-regex": "^6.0.1",
+    "aws-sdk": "^2.1046.0",
     "bcrypt": "^5.0.1",
     "bcryptjs": "^2.4.3",
     "cross-env": "^7.0.3",
