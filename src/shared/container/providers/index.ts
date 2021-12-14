@@ -20,5 +20,5 @@ container.registerInstance<IMailProvider>(
 
 container.registerSingleton<IStorageProvider>(
   "StorageProvider",
-  LocalStorageProvider
+  S3StorageProvider
 )

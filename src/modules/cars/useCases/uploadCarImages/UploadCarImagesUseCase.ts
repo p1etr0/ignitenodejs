@@ -16,9 +16,7 @@ class UploadCarImagesUseCase{
     private carsImagesRepository: ICarsImagesRepository,
     @inject("StorageProvider")
     private storageProvider: IStorageProvider
-  ){
-    
-  }
+  ){}
 
   async execute({car_id, images_name}: IRequest): Promise<void>{
     images_name.map(async (image) => {
