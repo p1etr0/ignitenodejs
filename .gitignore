@@ -1,3 +1,7 @@
 /node_modules
 tmp/*
 .env
+coverage
+.vscode
+!tmp/.gitkeep
+dist/
